@@ -1,7 +1,4 @@
 window.onload = function() {
-<<<<<<< HEAD
-    alert("Hello World");
-=======
     saludo();
 
 }
@@ -23,5 +20,4 @@ function saludo() {
 
     }
 
->>>>>>> ejercicio_2
 }
