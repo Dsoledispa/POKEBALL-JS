@@ -56,10 +56,9 @@ function galleryRandom() {
     let max = 10;
     let images = document.getElementsByTagName("img");
     let listRnd = getListRandom(10, min, max);
-    console.log(listRnd);
 
 
-    /* for (...) {
+    for (let i = 0; i < max; i++) {
         images[i].setAttribute("src", "./img/IMG_" + listRnd[i] + ".PNG");
-    } */
+    }
 }
