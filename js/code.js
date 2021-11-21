@@ -3,9 +3,11 @@ window.onload = function() {
 }
 
 function getListRandom(n, min, max) {
+    let number = [];
     for (let i = 0; i < n; i++) {
-        getRndInteger(min, max)
+        number.push(getRndInteger(min, max));
     }
+    return number;
 }
 
 function getRndInteger(min, max) {
