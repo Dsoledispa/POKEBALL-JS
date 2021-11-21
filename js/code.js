@@ -1,6 +1,8 @@
 window.onload = function() {
     saludo();
     console.log(getListRandom(10, 1, 10));
+    let ball = document.getElementById("ball");
+    ball.onclick = buttonOpacity;
 
 }
 
@@ -33,4 +35,14 @@ function getListRandom(n, min, max) {
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
+
+}
+
+function buttonOpacity() {
+    if (ball.style.opacity === "0.5") {
+        ball.style.opacity = "1";
+    } else {
+        ball.style.opacity = "0.5";
+    }
+
 }
