@@ -1,9 +1,13 @@
 window.onload = function() {
     saludo();
-    console.log(getListRandom(10, 1, 10));
     let ball = document.getElementById("ball");
-    ball.onclick = buttonOpacity;
+    ball.onclick = listRandom;
 
+}
+
+function listRandom() {
+    buttonOpacity();
+    galleryRandom();
 }
 
 function saludo() {
@@ -45,4 +49,17 @@ function buttonOpacity() {
         ball.style.opacity = "0.5";
     }
 
+}
+
+function galleryRandom() {
+    let min = 1;
+    let max = 10;
+    let images = document.getElementsByTagName("img");
+    let listRnd = getListRandom(10, min, max);
+    console.log(listRnd);
+
+
+    /* for (...) {
+        images[i].setAttribute("src", "./img/IMG_" + listRnd[i] + ".PNG");
+    } */
 }
